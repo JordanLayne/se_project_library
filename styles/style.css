@@ -48,6 +48,9 @@
 .nav__link:hover {
   color: #1f69c9;
 }
+.events__more:hover {
+  color: #1f69c9;
+}
 /* Add the hover state styles for .nav__link here */
 
 .header__title {
