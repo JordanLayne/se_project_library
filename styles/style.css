@@ -45,6 +45,9 @@
   font-weight: bold;
 }
 
+.nav__link:hover {
+  color: #1f69c9;
+}
 /* Add the hover state styles for .nav__link here */
 
 .header__title {
@@ -64,6 +67,9 @@
 
 .header__image {
   /* Write styles here */
+  position: absolute;
+  top: 135px;
+  right: 20px;
   max-width: 636px;
   z-index: 1;
 }
@@ -84,7 +90,9 @@
   color: #2f80ed;
   text-decoration: none;
 }
-
+.header__link:hover {
+  color: #1f69c9;
+}
 /* Add the hover state styles for .header__link here */
 
 .header__address {
@@ -112,7 +120,14 @@
   font-weight: 400;
   margin: 24px 0 0;
 }
-
+.staff__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 68px auto 40px;
+  max-width: 760px;
+  gap: 40px;
+}
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 
 .card {
@@ -120,6 +135,9 @@
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
+  width: 360px;
+  height: 420px;
+  display: flex;
 }
 
 .card__content {
@@ -227,6 +245,9 @@
 }
 
 /* Add the hover state styles for .events__more here */
+.events__more:hover {
+  columns: #1f69c9;
+}
 
 .events__cover {
   flex-grow: 1;
@@ -234,7 +255,6 @@
   flex-basis: 780px;
   max-width: 780px;
   position: relative;
-  border: 1px solid red;
 }
 
 .events__image {
@@ -318,12 +338,15 @@
 
 .membership__steps {
   list-style-type: none;
+  display: flex;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
+  gap: 40px;
+  justify-content: center;
 }
 
 .step {
+  max-width: 220px;
   /* Add styles */
 }
 
@@ -332,8 +355,6 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
-  display: flex;
-  align-items: center;
 }
 
 .step__icon {
@@ -351,6 +372,8 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  justify-content: start;
 }
 
 .about__title {
@@ -358,8 +381,8 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  z-index: 1;
   max-width: 154px;
+  z-index: 1;
 }
 
 .about__content {
@@ -367,6 +390,11 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin: 0 120px 0;
+  z-index: 1;
 }
 
 .about__paragraph {
@@ -378,22 +406,33 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  left: -91px;
+  top: -121px;
+  z-index: 0;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 57px 102px 60px 80px;
 }
 
 .footer__columns {
+  display: flex;
 }
 
-.footer__column_content_hours {
+.footer__column_hours {
+  margin-left: auto;
 }
 
-.footer__column_content_social {
+.footer__column_social {
+  margin-left: 100px;
 }
 
 .footer__logo {
+  width: 153px;
 }
 
 .footer__list {
@@ -404,9 +443,14 @@
 }
 
 .footer__list-item {
+  margin-bottom: 16px;
+}
+.footer__list-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .footer__column-heading {
+  margin: 0 0 20px;
 }
 
 .footer__column-link {
@@ -414,10 +458,19 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.footer__collumn-link:hover {
+  color: #c1c1c1;
 }
 
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
+  margin-top: 108px;
 }
