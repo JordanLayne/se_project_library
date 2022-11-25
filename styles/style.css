@@ -3,7 +3,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -123,11 +123,11 @@
   font-weight: 400;
   margin: 24px 0 0;
 }
-.staff__card {
+.staff__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 68px auto 40px;
+  margin: 68px auto 0;
   max-width: 760px;
   gap: 40px;
 }
@@ -148,8 +148,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 360px;
-  max-height: 420px;
 }
 
 .card__title {
@@ -216,18 +214,16 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
-  max-width: 24px;
-  max-height: 24px;
 }
 
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
-  max-width: 24px;
-  max-height: 24px;
 }
 
 .event-info__text {
@@ -249,7 +245,7 @@
 
 /* Add the hover state styles for .events__more here */
 .events__more:hover {
-  columns: #1f69c9;
+  color: #1f69c9;
 }
 
 .events__cover {
@@ -349,7 +345,7 @@
 }
 
 .step {
-  max-width: 220px;
+  flex-basis: auto;
   /* Add styles */
 }
 
@@ -396,7 +392,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 32px;
-  margin: 0 120px 0;
+  margin: auto;
   z-index: 1;
 }
 
@@ -424,18 +420,20 @@
 
 .footer__columns {
   display: flex;
+  min-height: 224px;
 }
 
-.footer__column_hours {
+.footer__column_content_hours {
   margin-left: auto;
 }
 
-.footer__column_social {
+.footer__column_content_social {
   margin-left: 100px;
 }
 
 .footer__logo {
-  width: 153px;
+  width: 116px;
+  height: 21px;
 }
 
 .footer__list {
@@ -454,6 +452,7 @@
 
 .footer__column-heading {
   margin: 0 0 20px;
+  font-size: 16px;
 }
 
 .footer__column-link {
@@ -475,5 +474,6 @@
 }
 
 .footer__copyright {
-  margin-top: 108px;
+  margin-top: 0;
+  margin-bottom: 0;
 }

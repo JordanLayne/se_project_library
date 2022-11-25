@@ -33,7 +33,7 @@
               <a href="#about" class="nav__link">About</a>
             </li>
             <li>
-              <a href="nav__link">Contacts</a>
+              <a href="#contacts" class="#nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -49,7 +49,7 @@
           class="header__image"
         />
         <div class="header__footer">
-          <a href="#footer" class="header__link">About the library &darr;</a>
+          <a href="#about" class="header__link">About the library &darr;</a>
           <p class="header__address">
             200 Success Avenue, The Town of Practicum
           </p>
@@ -61,7 +61,7 @@
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-          <ul class="staff__card">
+          <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -180,14 +180,14 @@
             <div class="person person_name_burbidge">
               <p class="person__caption">Margaret Burbidge</p>
               <img
-                class="person__image person__image_size_l"
+                class="person__image person__image_size_m"
                 src="images/person_burbidge.png"
                 alt="Margaret Burbidge"
               />
             </div>
             <div class="person person_name_cannon">
               <img
-                class="person__image person__image_size_l"
+                class="person__image person__image_size_m"
                 src="images/person_cannon.png"
                 alt="Annie Jump Cannon"
               />
@@ -195,7 +195,7 @@
             </div>
             <div class="person person_name_mitchell">
               <img
-                class="person__image person__image_size_l"
+                class="person__image person__image_size_s"
                 src="images/person_mitchell.png"
                 alt="Maria Mitchell"
               />
@@ -204,7 +204,7 @@
             <div class="person person_name_tarter">
               <p class="person__caption">Jill Tarter</p>
               <img
-                class="person__image person__image_size_l"
+                class="person__image person__image_size_m"
                 src="images/person_tarter.png"
                 alt="Jill Tarter"
               />
@@ -291,8 +291,8 @@
           <div class="about__circle"></div>
         </section>
       </main>
-      <footer id="footer" class="footer">
-        <section class="footer__columns">
+      <footer id="contacts" class="footer">
+        <div class="footer__columns">
           <div class="footer__column">
             <div class="footer__logo">
               <img
@@ -302,15 +302,15 @@
               />
             </div>
           </div>
-          <div class="footer__column footer__column_hours">
-            <h2 class="footer__heading">Hours</h2>
+          <div class="footer__column_content_hours">
+            <h2 class="footer__column-heading">Hours</h2>
             <ul class="footer__list">
               <li class="footer__list-item">Weekdays: 9am - 8pm</li>
               <li class="footer__list-item">Weekends: 10am - 6pm</li>
             </ul>
           </div>
-          <div class="footer__column footer__column_social">
-            <h2 class="footer__heading">Social Media</h2>
+          <div class="footer__column_content_social">
+            <h2 class="footer__column-heading">Social Media</h2>
             <ul class="footer__list">
               <li class="footer__list-item">
                 <a class="footer__column-link" href="#">
@@ -334,8 +334,8 @@
               </li>
             </ul>
           </div>
-        </section>
-        <p class="footer__column-copyrights">&copy; 2022 Jordan Layne</p>
+        </div>
+        <p class="footer__copyright">&copy; 2022 Jordan Layne</p>
       </footer>
     </div>
   </body>
